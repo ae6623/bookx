@@ -1,0 +1,4 @@
+[
+  {"bookId":'1',"bookName":'java权威指南',"bookScote":5,"bookState":1},
+  {"bookId":'2',"bookName":'javascript权威指南',"bookScote":4,"bookState":0}
+]
