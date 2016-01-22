@@ -6,6 +6,15 @@
     <meta charset="utf-8" />
     <!-- 新 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style type="text/css">
+    .state-1 {
+        color: red;
+    }
+    
+    .state-0 {
+        color: #000;
+    }
+    </style>
     <script src="angular.min.js"></script>
     <!--  <script src="js/controllers/booklist.controller.js" /> -->
     <script>
@@ -15,19 +24,23 @@
         futureResponse.success(function(booksdata, status, headers, config) {
             $scope.books = booksdata; //图书列表数据
         });
-         
+
     });
     </script>
 </head>
 
 <body ng-app="bookMod" ng-controller="listbook">
     <div class=".container-fluid">
-        <div class="alert alert-warning" role="alert">试用版本 v0.1</div>
+        <div class="alert alert-warning" role="alert">v0.1 欢迎一起维护
+            <p>GitHub: 主干<a href="https://github.com/yzzhanga/bookx" target="blank">https://github.com/yzzhanga/bookx</a></p>
+            <p>GitHub: 分支<a href="https://github.com/ae6623/bookx" target="blank">https://github.com/ae6623/bookx</a></p>
+        </div>
         <!--标题 -->
         <div class="page-header">
-          <div class="row">
-             <div class="col-md-12" style="text-align:center;"><h1>营销研发部 图书管理系统</h1></div>
-          </div>
+            <div class="row">
+                <div class="col-md-12" style="text-align:center;">
+                    <h1>营销研发部 图书管理系统  <small>    QQ群:415560048</small></h1></div>
+            </div>
         </div>
         <div class="row">
             <div class="col-md-1"></div>
@@ -53,10 +66,10 @@
                             <th> 借阅时间 </th>
                         </thead>
                         <tbody class="Table cell">
-                            <tr ng-repeat="book in books|filter:bookName" ng-if="book.bookName != undefined" >
+                            <tr ng-repeat="book in books|filter:bookName" ng-if="book.bookName != undefined">
                                 <td>{{book.id}}</td>
-                                <td>{{book.bookName}}</td>                               
-                                <td>{{book.bookState==1?"已借阅":"未借阅"}}</td>
+                                <td>{{book.bookName}}</td>
+                                <td><span class="state-{{book.state}}">{{book.state==1?"已借阅":"未借阅"}}</span></td>
                                 <td>{{book.borrower}}</td>
                                 <td>{{book.borrowTime}}</td>
                                 <!-- <td><a>{{book.bookState==1?"归还":"借阅"}}</a>&nbsp;&nbsp;<a>历史记录</a></td> -->

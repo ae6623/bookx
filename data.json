@@ -1,312 +1,312 @@
 [{
     "id": "1",
     "bookName": "ElasticSearch CookBook",
-    "state": "0",
+    "state": "1",
     "borrower": "李海龙",
     "borrowTime": "20151223"
 }, {
     "id": "2",
     "bookName": "鸟哥的Liunx私房菜 基础篇(第三版)",
-    "state": "0",
+    "state": "1",
     "borrower": "刘云飞",
     "borrowTime": "20151218"
 }, {
     "id": "3",
     "bookName": "大数据时代-生活/工作与思维的大变革",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "4",
     "bookName": "大型网站技术架构-核心原理与案例分析",
-    "state": "0",
+    "state": "1",
     "borrower": "王柱权",
     "borrowTime": "20151026"
 }, {
     "id": "5",
     "bookName": "恰如其分的软件架构",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "6",
     "bookName": "JAVA虚拟机规范 (JAVASE 7)",
-    "state": "0",
+    "state": "1",
     "borrower": "董国军",
     "borrowTime": "20160116"
 }, {
     "id": "7",
     "bookName": "Thinking in JAVA (第四版)",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "8",
     "bookName": "javascript权威指南",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "9",
     "bookName": "重构-改善既有代码的设计",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "10",
     "bookName": "深入理解java虚拟机 (JVM高级特性与最佳实践)",
-    "state": "0",
+    "state": "1",
     "borrower": "张迎政",
     "borrowTime": "20151226"
 }, {
     "id": "11",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "12",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "13",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "14",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "15",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "16",
     "bookName": "UNIX系统管理员大全",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "17",
     "bookName": "大型网站系统与java中间件实践",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "18",
     "bookName": "java性能优化权威指南",
-    "state": "0",
+    "state": "1",
     "borrower": "王宇",
     "borrowTime": "20151013"
 }, {
     "id": "19",
     "bookName": "java7并发编程实战手册",
-    "state": "0",
+    "state": "1",
     "borrower": "尹群虎",
     "borrowTime": "20151124"
 }, {
     "id": "20",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "21",
     "bookName": "Effective Java中文版",
-    "state": "0",
+    "state": "1",
     "borrower": "孙启明",
     "borrowTime": "20160118"
 }, {
     "id": "22",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "23",
     "bookName": "设计模式解析 (第二版)",
-    "state": "0",
+    "state": "1",
     "borrower": "刘云飞",
     "borrowTime": "20151225"
 }, {
     "id": "24",
     "bookName": "企业用架构模式",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "25",
     "bookName": "大数据:互联网大规模数据挖掘与分布式处理",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "26",
     "bookName": "数据挖掘导论",
-    "state": "0",
+    "state": "1",
     "borrower": "李海龙",
     "borrowTime": "20151124"
 }, {
     "id": "27",
     "bookName": "精确营销方法与案例:大数据时代的商业分析",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "28",
     "bookName": "市场营销原理 (第14版:全球版)",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "29",
     "bookName": "大规模分布式存储系统原理解析与架构实战",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "30",
     "bookName": "京东技术解密;",
-    "state": "0",
+    "state": "1",
     "borrower": "王文明",
     "borrowTime": "20151216"
 }, {
     "id": "31",
     "bookName": "ElasticSearch 服务器开发",
-    "state": "0",
+    "state": "1",
     "borrower": "巩文涛",
     "borrowTime": "20151104"
 }, {
     "id": "32",
     "bookName": "ElasticSearch 可扩展的开源弹性搜索引擎解决方案",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "33",
     "bookName": "淘宝技术这十年",
-    "state": "0",
+    "state": "1",
     "borrower": "王文明",
     "borrowTime": "20151216"
 }, {
     "id": "34",
     "bookName": "24小时365天不间断服务: 服务器基础设施核心技术",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "35",
     "bookName": "计算机是怎样跑起来的",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "36",
     "bookName": "程序是怎样跑起来的",
-    "state": "0",
+    "state": "1",
     "borrower": "贺宇",
     "borrowTime": "20151210"
 }, {
     "id": "37",
     "bookName": "从0到1:开启商业与未来的秘密",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "38",
     "bookName": "创业维艰:如何完成比难更难的事",
-    "state": "0"
+    "state": "1"
 }, {
     "id": "39",
     "bookName": "图解服务器端网络结构",
-    "state": "0",
+    "state": "1",
     "borrower": "张迎政",
     "borrowTime": "20150922"
 }, {
     "id": "40",
     "bookName": "Mysql技术内幕 - innoDB存储引擎",
-    "state": "0",
+    "state": "1",
     "borrower": "李海娇",
     "borrowTime": "20160106"
 }, {
     "id": "41",
     "bookName": "JAVA多线程编程核心技术",
-    "state": "0",
+    "state": "1",
     "borrower": "巩文涛",
     "borrowTime": "20151029"
 }, {
     "id": "42",
     "bookName": "HBASE权威指南",
-    "state": "0",
+    "state": "1",
     "borrower": "梁志尚",
     "borrowTime": "20151203"
 }, {
     "id": "43",
     "bookName": "Redis设计与实现",
-    "state": "0",
+    "state": "1",
     "borrower": "杨健",
     "borrowTime": "20151029"
 }, {
     "id": "44",
     "bookName": "MongoDB权威指南",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "45",
     "bookName": "JAVASCRIPT函数式编程",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "46",
     "bookName": "Netty权威指南",
-    "state": "0",
+    "state": "1",
     "borrower": "翟凤民",
     "borrowTime": "20151214"
 }, {
     "id": "47",
     "bookName": "有效的单元测试",
-    "state": "0",
+    "state": "1",
     "borrower": "鹿玉龙",
     "borrowTime": "20151207"
 }, {
     "id": "48",
     "bookName": "Maven实战",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "49",
     "bookName": "设计原本",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "50",
     "bookName": "人月神话",
-    "state": "0",
+    "state": "1",
     "borrower": "宋合营",
     "borrowTime": "20151222"
 }, {
     "id": "51",
     "bookName": "人件",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "52",
     "bookName": "web信息架构:设计大型网站",
-    "state": "0",
+    "state": "1",
     "borrower": "郝明明",
     "borrowTime": "20151216"
 }, {
     "id": "53",
     "bookName": "敏捷济南修炼",
-    "state": "0",
+    "state": "1",
     "borrower": "李海龙",
     "borrowTime": "20151225"
 }, {
     "id": "54",
     "bookName": "高效团队开发:工具与方法",
-    "state": "0",
+    "state": "1",
     "borrower": "高隆杰",
     "borrowTime": "20151216"
 }, {
     "id": "55",
     "bookName": "微信公众平台搭建与开发揭秘",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "56",
     "bookName": "java并发编程的艺术",
-    "state": "0",
+    "state": "1",
     "borrower": "刘振宇",
     "borrowTime": "20151216"
 }, {
     "id": "57",
     "bookName": "推荐系统:技术,评估及高效算法",
-    "state": "0",
+    "state": "1",
     "borrower": "王文博",
     "borrowTime": "20151216"
 }, {
     "id": "58",
     "bookName": "大话数据结构",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "59",
     "bookName": "Lucene搜索引擎开发进阶实战",
-    "state": "0",
+    "state": "1",
     "borrower": "董国军",
     "borrowTime": "20151226"
 }, {
     "id": "60",
     "bookName": "互联网营销-理念的颠覆与蜕变",
-    "state": "0",
+    "state": "1",
     "borrower": "郝明明",
     "borrowTime": "20151216"
 }, {
     "id": "61",
     "bookName": "突破为营销:-破译移动互联网密码",
-    "state": "1"
+    "state": "0"
 }, {
     "id": "62",
     "bookName": "微信公众平台JSSDK开发实战",
-    "state": "0",
+    "state": "1",
     "borrower": "李金强",
     "borrowTime": "20151219"
 }, {
     "id": "63",
     "bookName": "微服务架构与实战",
-    "state": "0",
+    "state": "1",
     "borrower": "王文博",
     "borrowTime": "20151216"
 }, {
     "id": "64",
     "bookName": "微信公众平台:应用开发实战",
-    "state": "1"
+    "state": "0"
 }]
