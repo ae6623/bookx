@@ -1,109 +1,75 @@
 <!doctype html>
-<html  lang="zh-CN">
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <meta charset="utf-8" />
+<html lang="zh-CN">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="utf-8" />
     <!-- 新 Bootstrap 核心 CSS 文件 -->
-<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
-<script src="angular.min.js"></script>
-  <!--  <script src="js/controllers/booklist.controller.js" /> -->
-  <script>
-var bookModule = angular.module('bookMod', []);
-  bookModule.controller('listbook',function($scope,$http){
-    var futureResponse = $http.get('data.json');
-    futureResponse.success(function (booksdata, status, headers, config) {
-        $scope.books = booksdata;       //图书列表数据
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="angular.min.js"></script>
+    <!--  <script src="js/controllers/booklist.controller.js" /> -->
+    <script>
+    var bookModule = angular.module('bookMod', []);
+    bookModule.controller('listbook', function($scope, $http) {
+        var futureResponse = $http.get('data.json');
+        futureResponse.success(function(booksdata, status, headers, config) {
+            $scope.books = booksdata; //图书列表数据
+        });
+         
     });
-    //$scope.books=[
-    //          {"bookId":'1',"bookName":'java权威指南',"bookScote":5,"bookState":1},
-    //          {"bookId":'2',"bookName":'javascript权威指南',"bookScote":4,"bookState":0}
-    //            ];
+    </script>
+</head>
 
-
-    $scope.shootStar=function(num){
-
-      //  var starflag="<span class='glyphicon glyphicon-star";
-      //  var starflagEnd="'/>"
-        var star ="";
-        //for(i=0;i<5;i++){
-          //  if (i<=(num-1)){
-      //          star=star+starflag+starflagEnd;
-              for(i=0;i<num;i++)
-                  star+="*";
-        //    }
-            //else {
-      //          star=star+starflag+"-empty"+starflagEnd;
-          //  }
-
-      //  }
-          return star;
-    }
-          });
-
-  </script>
-  </head>
-  <body ng-app="bookMod" ng-controller="listbook">
-    <div class=".container-fluid" >
-
-        <div class="alert alert-warning" role="alert">试用版本 v1.0</div>
+<body ng-app="bookMod" ng-controller="listbook">
+    <div class=".container-fluid">
+        <div class="alert alert-warning" role="alert">试用版本 v0.1</div>
         <!--标题 -->
         <div class="page-header">
-          <h1>营销研发部 <small>图书管理系统</small></h1>
-        </div>
-        <div class="row">
-          <div class="col-md-1" ></div>
-          <div class="col-md-10" >
-
-        <!-- 检索条-->
-        <div class="panel panel-success">
-          <div class="panel-heading">书目检索</div>
-          <form class="form-inline">
-            <input type="text" class="form-control" ng-model="bookName" placeholder="录入检索书名/编号">
-             <button type="button" class="btn btn-primary">检索</button>
-          </form>
-        </div>
-
-        <!-- 列表页-->
-        <div  class="panel panel-primary"  >
-          <div class="panel-heading">书目列表</div>
-              <!--列表主体 -->
-              <table class="table table-hover">
-                <thead class="Table heading">
-                  <th> 编号 </th>
-                  <th> 书名 </th>
-                  <th> 星级 </th>
-                  <th> 状态 </th>
-                  <th> 操作 </th>
-                </thead>
-                <tbody class="Table cell">
-
-                  <tr ng-repeat="book in books|filter:bookName">
-                                      <td>{{book.bookId}}</td>
-                                      <td>{{book.bookName}}</td>
-                                      <td >
-                                      {{shootStar(book.bookScote)}}
-
-                                      </td>
-                                      <td>{{book.bookState==1?"已借阅":"未借阅"}}</td>
-                                      <td><a>{{book.bookState==1?"归还":"借阅"}}</a>&nbsp;&nbsp;<a>历史记录</a></td>
-                                    </tr>
-
-                </tbody>
-              </table>
-
-            </div>
-
-
-
-
-              <div class="col-md-1" ></div>
+          <div class="row">
+             <div class="col-md-12" style="text-align:center;"><h1>营销研发部 图书管理系统</h1></div>
           </div>
         </div>
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <!-- 检索条-->
+                <div class="panel panel-success" style="display:none">
+                    <div class="panel-heading">书目检索</div>
+                    <form class="form-inline">
+                        <input type="text" class="form-control" ng-model="bookName" placeholder="录入检索书名/编号">
+                        <button type="button" class="btn btn-primary">检索</button>
+                    </form>
+                </div>
+                <!-- 列表页-->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">书目列表</div>
+                    <!--列表主体 -->
+                    <table class="table table-hover">
+                        <thead class="Table heading">
+                            <th> 编号 </th>
+                            <th> 书名 </th>
+                            <th> 状态 </th>
+                            <th> 借阅人 </th>
+                            <th> 借阅时间 </th>
+                        </thead>
+                        <tbody class="Table cell">
+                            <tr ng-repeat="book in books|filter:bookName" ng-if="book.bookName != undefined" >
+                                <td>{{book.id}}</td>
+                                <td>{{book.bookName}}</td>                               
+                                <td>{{book.bookState==1?"已借阅":"未借阅"}}</td>
+                                <td>{{book.borrower}}</td>
+                                <td>{{book.borrowTime}}</td>
+                                <!-- <td><a>{{book.bookState==1?"归还":"借阅"}}</a>&nbsp;&nbsp;<a>历史记录</a></td> -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
         <!--列表主体结束 -->
-
-      <!--主题行 -->
+        <!--主题行 -->
     </div>
-  </body>
-
+</body>
 
 </html>
