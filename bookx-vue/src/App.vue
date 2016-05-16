@@ -2,6 +2,7 @@
   <div id="app">
     <img class="logo" src="./assets/logo.png">
     <hello></hello>
+    <login></login>
     <p>
       Welcome to bookx-Vue Vue.js app. To get started, take a look at the
       <a href="https://github.com/vuejs-templates/webpack#folder-structure" target="_blank">README</a>
@@ -22,10 +23,11 @@
 
 <script>
 import Hello from './components/Hello'
+import Login from './components/Login'
 
 export default {
   components: {
-    Hello
+    Hello, Login
   }
 }
 </script>
